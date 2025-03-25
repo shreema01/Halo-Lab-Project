@@ -1,0 +1,5 @@
+Modification(Halo-Lab):(HOME PAGE)
+1.jegula te background e image ase oigula te img set Korte hobe
+2.hover er effect gula dite hobe
+3.slider er loop wise implementation korte hobe
+4.je je jaigai slider ase oi jaiga gulo te slider use korte hobe full page er.
