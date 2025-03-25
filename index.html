@@ -24,15 +24,15 @@
 <body>
 
   <!--  ===================== Header Section(Start) =========================  -->
-  <header class="header max-w-8xl">
+  
+  <header class="header max-w-8xl mx-100 px-6 py-4 flex items-center justify-between">
     <!-- Header logo portion -->
     <div>
-      <img class="header_logo"
-        src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/65142d5754eafa29699ca491_logo.svg"
-        alt="Halo Lab Logo">
+      <img class="header_logo" src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/65142d5754eafa29699ca491_logo.svg" alt="Halo Lab Logo">
     </div>
+  
     <!-- Header nav bar portion -->
-    <nav class="navbar_menu">
+    <nav class="navbar_menu hidden md:flex space-x-6">
       <div class="navbar_menu_section">
         <a href="#">services</a>
         <i class="services_icon fa-solid fa-angle-down"></i>
@@ -50,13 +50,69 @@
         <a href="#">our blog</a>
       </div>
     </nav>
+  
     <!-- set call to action button -->
     <div class="Contact_Us">
       <a href="#" class="Contact_Us">
         <button class="Contact_Us_Button">Contact Us</button>
       </a>
     </div>
+  
+    <!-- Mobile hamburger menu -->
+    <div class="md:hidden flex items-center">
+      <button class="text-2xl" id="hamburger-icon">
+        <i class="fas fa-bars"></i>
+      </button>
+    </div>
   </header>
+  
+  <!-- Mobile menu -->
+  <div id="mobile-menu" class="md:hidden flex flex-col space-y-4 mt-4 hidden">
+    <a href="#">services</a>
+    <a href="#">projects</a>
+    <a href="#">dedicated team</a>
+    <a href="#">open source</a>
+    <a href="#">our blog</a>
+    <a href="#" class="block mt-4">
+      <button class="Contact_Us_Button">Contact Us</button>
+    </a>
+  </div>
+  
+  
+  
+  <!-- <header class="header max-w-8xl"> -->
+    <!-- Header logo portion -->
+    <!-- <div>
+      <img class="header_logo"
+        src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/65142d5754eafa29699ca491_logo.svg"
+        alt="Halo Lab Logo">
+    </div> -->
+    <!-- Header nav bar portion -->
+    <!-- <nav class="navbar_menu">
+      <div class="navbar_menu_section">
+        <a href="#">services</a>
+        <i class="services_icon fa-solid fa-angle-down"></i>
+      </div>
+      <div class="navbar_menu_section">
+        <a href="#">projects</a>
+      </div>
+      <div class="navbar_menu_section">
+        <a href="#">dedicated team</a>
+      </div>
+      <div class="navbar_menu_section">
+        <a href="#">open source</a>
+      </div>
+      <div class="navbar_menu_section">
+        <a href="#">our blog</a>
+      </div>
+    </nav> -->
+    <!-- set call to action button -->
+    <!-- <div class="Contact_Us">
+      <a href="#" class="Contact_Us">
+        <button class="Contact_Us_Button">Contact Us</button>
+      </a>
+    </div>
+  </header> -->
 
   <!-- ==========================   Header Section(End)  =============================  -->
 
@@ -807,6 +863,13 @@
 
     prevBtn.onclick = () => slider.scrollBy({ left: -cardWidth, behavior: 'smooth' });
     nextBtn.onclick = () => slider.scrollBy({ left: cardWidth, behavior: 'smooth' });
+   
+    const hamburgerIcon = document.getElementById("hamburger-icon");
+    const mobileMenu = document.getElementById("mobile-menu");
+  
+    hamburgerIcon.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
 
   </script>
 </body>
