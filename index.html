@@ -840,7 +840,7 @@
     prevBtn.onclick = () => {
       const totalScrollWidth = slider.scrollWidth - slider.clientWidth;
   
-      if (slider.scrollLeft <= 0) {
+      if (slider.scrollLeft <= 0) {    
         slider.scrollTo({ left: totalScrollWidth, behavior: 'smooth' });
       } else {
         slider.scrollBy({ left: -cardWidth, behavior: 'smooth' });
@@ -848,7 +848,7 @@
     };
   
     nextBtn.onclick = () => {
-      const totalScrollWidth = slider.scrollWidth - slider.clientWidth;
+      const totalScrollWidth  = slider.scrollWidth - slider.clientWidth;
   
       if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth - 1) {
         slider.scrollTo({ left: 0, behavior: 'smooth' });
@@ -867,7 +867,7 @@
     const totalScrollWidth = slider.scrollWidth - slider.clientWidth;
     prevBtn.onclick = () => {
       if (slider.scrollLeft <= 0) {
-       
+      
         slider.scrollTo({ left: totalScrollWidth, behavior: 'smooth' });
       } else {
         slider.scrollBy({ left: -cardWidth, behavior: 'smooth' });
