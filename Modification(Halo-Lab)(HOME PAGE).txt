@@ -1,9 +1,10 @@
 Modification(Halo-Lab)->(HOME PAGE):
 1.jegula te background e image ase oigula te img set Korte hobe.
 2.hover er effect gula dite hobe.
-3.slider er loop wise implementation korte hobe(done).
+3.slider er loop wise implementation korte hobe(done).with adding more slide(done)
 4.je je jaigai slider ase oi jaiga gulo te slider use korte hobe full page er.
 5.full screen e puro design ta hobe kono space chara jabe na.
+6.header portion responsiveness
 
 (MEGA MENU):
 1.Navbar e jottogula section ase oigula te page add korte hobe.     
@@ -11,5 +12,8 @@ Modification(Halo-Lab)->(HOME PAGE):
 6.4.25:
 -->loop wise slide showing(done)
 -->add another slide for testing purpose(done)
+-->Full width for all section trying
+
+
 
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              
