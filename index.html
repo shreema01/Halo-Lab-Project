@@ -24,15 +24,15 @@
 <body>
 
   <!--  ===================== Header Section(Start) =========================  -->
-  
-  <header class="header max-w-8xl mx-100 px-6 py-4 flex items-center justify-between">
-                            <!-- Header logo portion -->
+  <header class="header max-w-8xl">
+    <!-- Header logo portion -->
     <div>
-      <img class="header_logo" src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/65142d5754eafa29699ca491_logo.svg" alt="Halo Lab Logo">
+      <img class="header_logo"
+        src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/65142d5754eafa29699ca491_logo.svg"
+        alt="Halo Lab Logo">
     </div>
-  
-                            <!-- Header nav bar portion -->
-    <nav class="navbar_menu hidden md:flex space-x-6">
+    <!-- Header nav bar portion -->
+    <nav class="navbar_menu">
       <div class="navbar_menu_section">
         <a href="#">services</a>
         <i class="services_icon fa-solid fa-angle-down"></i>
@@ -50,67 +50,13 @@
         <a href="#">our blog</a>
       </div>
     </nav>
-                           <!-- set call to action button -->
+    <!-- set call to action button -->
     <div class="Contact_Us">
       <a href="#" class="Contact_Us">
         <button class="Contact_Us_Button">Contact Us</button>
       </a>
     </div>
-  
-                           <!-- Mobile hamburger menu -->
-    <div class="md:hidden flex items-center">
-      <button class="text-2xl" id="hamburger-icon">
-        <i class="fas fa-bars"></i>
-      </button>
-    </div>
   </header>
-  
-                            <!-- Mobile menu -->
-  <div id="mobile-menu" class="md:hidden flex flex-col space-y-4 mt-4 hidden">
-    <a href="#">services</a>
-    <a href="#">projects</a>
-    <a href="#">dedicated team</a>
-    <a href="#">open source</a>
-    <a href="#">our blog</a>
-    <a href="#" class="block mt-4">
-      <button class="Contact_Us_Button">Contact Us</button>
-    </a>
-  </div>
-  
-  <!-- before implementation of responsiveness -->
-  <!-- <header class="header max-w-8xl"> -->
-    <!-- Header logo portion -->
-    <!-- <div>
-      <img class="header_logo"
-        src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/65142d5754eafa29699ca491_logo.svg"
-        alt="Halo Lab Logo">
-    </div> -->
-    <!-- Header nav bar portion -->
-    <!-- <nav class="navbar_menu">
-      <div class="navbar_menu_section">
-        <a href="#">services</a>
-        <i class="services_icon fa-solid fa-angle-down"></i>
-      </div>
-      <div class="navbar_menu_section">
-        <a href="#">projects</a>
-      </div>
-      <div class="navbar_menu_section">
-        <a href="#">dedicated team</a>
-      </div>
-      <div class="navbar_menu_section">
-        <a href="#">open source</a>
-      </div>
-      <div class="navbar_menu_section">
-        <a href="#">our blog</a>
-      </div>
-    </nav> -->
-    <!-- set call to action button -->
-    <!-- <div class="Contact_Us">
-      <a href="#" class="Contact_Us">
-        <button class="Contact_Us_Button">Contact Us</button>
-      </a>
-    </div>
-  </header> -->
 
   <!-- ==========================   Header Section(End)  =============================  -->
 
@@ -120,7 +66,7 @@
     <section>
     <div class="bg-navy-900 flex py-5">
       <div class="max-w-7xl m-auto px-2 md:px-2 flex flex-col md:flex-row items-center gap-6 md:gap-10 w-full">
-                                      <!-- Left Content -->
+        <!-- Left Content -->
         <div class="bg-indigo-700 h-[420px] w-full md:w-2/3 text-white p-6 md:p-8 mx-0 rounded-2xl relative">
           <h1 class="text-3xl md:text-7xl font-bold leading-tight">
             DESIGN & TECH <br> AGENCY HELPING <br> BRANDS BECOME <br>
@@ -137,7 +83,7 @@
           </div>
         </div>
 
-                                   <!-- Right Content -->
+        <!-- Right Content -->
         <div class="bg-yellow-400 h-[420px]   flex-1 p-2 rounded-2xl flex items-center justify-center w-full relative">
           <div class="relative w-full h-auto transform">
             <video src="embed.mp4" alt="Card" class="w-full h-full shadow-lg rounded-lg" controls></video>
@@ -146,10 +92,9 @@
       </div>
     </div>
   </section>
-
     <!-- =========================   Video Playing(End)  ============================= -->
 
-    <!-- ==========================  Trusted By Section(Start)  ============================= -->
+    <!-- ==========================  Trusted By Section(Start)  ============c================= -->
     <section class="max-w-7xl mx-auto mt-20 p-5 border border-gray-700 rounded-3xl flex flex-col items-center">
       <div class="text-gray-400 text-center relative">
         <div class="bg-gray-700 inline-block px-4 py-2 rounded-lg">
@@ -320,7 +265,7 @@
   </section>
     <!--========================  Our Services Portion(End) ==================== -->
 
-    <!--========================     Review portion start   ==================== -->
+    <!--========================     Review portion (Start)   ==================== -->
     <section class="max-w-7xl mx-auto px-4 pt-20 flex flex-col md:flex-row gap-10 md:gap-40">
       <div class="review_container flex items-center justify-center md:justify-start">
         <div class="review_label flex items-center space-x-2">
@@ -375,7 +320,6 @@
             </div>
             <hr class="my-8 border-white/20">
             <p class="text-lg font-semibold leading-relaxed">
-
               The client is proud of Halo Lab's work, which their customers have praised. They lead a communicative
               process to enable the team to reach out to them at any time. The client also praises their designs and
               suggestions, which help improve their services.
@@ -405,7 +349,6 @@
             </div>
             <hr class="my-8 border-white/20">
             <p class="text-lg font-semibold leading-relaxed">
-
               The client is proud of Halo Lab's work, which their customers have praised. They lead a communicative
               process to enable the team to reach out to them at any time. The client also praises their designs and
               suggestions, which help improve their services.
@@ -483,7 +426,7 @@
               <div class="flex transition-transform duration-300">
                 <div
                   class="mt-10 slide flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6 flex-shrink-0 w-full">
-                                        <!-- Text Content -->
+                  <!-- Text Content -->
                   <div class="bg-gray-100 p-6 sm:p-8 rounded-lg flex-1">
                     <img
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZaUzw2pmQvD8BFibZ8F9fcoyJGGjYAxe6NA&s"
@@ -496,7 +439,7 @@
                         src="https://static.vecteezy.com/system/resources/thumbnails/002/399/741/small/american-flag-icon-vector.jpg"
                         alt="" class="h-3 ms-2"></p>
                   </div>
-                                    <!-- Image/Video Preview -->
+                  <!-- Image/Video Preview -->
                   <div class="flex-1 w-full">
                     <div class="bg-black p-4 rounded-lg shadow-lg">
                       <img
@@ -507,7 +450,7 @@
                 </div>
                 <div
                   class="mt-10 slide   flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6 flex-shrink-0 w-full">
-                                        <!-- Text Content -->
+                  <!-- Text Content -->
                   <div class="bg-gray-100 p-6 sm:p-8 rounded-lg flex-1">
                     <img
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZaUzw2pmQvD8BFibZ8F9fcoyJGGjYAxe6NA&s"
@@ -520,7 +463,7 @@
                         src="https://static.vecteezy.com/system/resources/thumbnails/002/399/741/small/american-flag-icon-vector.jpg"
                         alt="" class="h-3 ms-2"></p>
                   </div>
-                                       <!-- Image/Video Preview -->
+                  <!-- Image/Video Preview -->
                   <div class="flex-1 w-full">
                     <div class="bg-black p-4 rounded-lg shadow-lg">
                       <img
@@ -531,7 +474,7 @@
                 </div>
                 <div
                   class="mt-10 slide   flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6 flex-shrink-0 w-full">
-                                        <!-- Text Content -->
+                  <!-- Text Content -->
                   <div class="bg-gray-100 p-6 sm:p-8 rounded-lg flex-1">
                     <img
                       src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRZaUzw2pmQvD8BFibZ8F9fcoyJGGjYAxe6NA&s"
@@ -544,7 +487,7 @@
                         src="https://static.vecteezy.com/system/resources/thumbnails/002/399/741/small/american-flag-icon-vector.jpg"
                         alt="" class="h-3 ms-2"></p>
                   </div>
-                                    <!-- Image/Video Preview -->
+                  <!-- Image/Video Preview -->
                   <div class="flex-1 w-full">
                     <div class="bg-black p-4 rounded-lg shadow-lg">
                       <img
@@ -555,7 +498,7 @@
                 </div>
               </div>
             </div>
-                                    <!-- Navigation -->
+            <!-- Navigation -->
             <div class="mt-6 flex gap-2 items-center">
               <button id="prev"
                 class="border border-gray-400 w-10 h-10 px-3 rounded-full hover:bg-gray-200 text-gray-700 transition">←</button>
@@ -564,6 +507,8 @@
               <div class="h-1 w-full ms-4 bg-blue-600 rounded-full"></div>
             </div>
           </div>
+
+
         </div>
       </section>
     </div>
@@ -577,7 +522,7 @@
       <section class="max-w-7xl mx-auto py-16 px-6">
         <h2 class="text-7xl font-bold text-white">OUR <br> BENEFITS</h2>
         <div class="mt-10 flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-6">
-                                    <!-- Left Card -->
+          <!-- Left Card -->
           <div class="bg-white text-black rounded-2xl p-6 shadow-lg w-full lg:w-1/3">
             <div class="flex items-center space-x-3">
               <div class="bg-yellow-400 text-black p-2 rounded-full">
@@ -593,7 +538,7 @@
               <span class="h-1 w-10 bg-gray-300 rounded-full"></span>
             </div>
           </div>
-                                   <!-- Right Benefits Cards -->
+          <!-- Right Benefits Cards -->
           <div class="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6 w-full lg:w-2/3">
             <div class="border border-white/50 p-6 rounded-2xl w-full lg:w-1/3">
               <h3 class="text-5xl font-bold">$530M</h3>
@@ -690,24 +635,28 @@
           <img
             src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/66e0344627580704633cecfb_award-color-clutch.svg"
             alt="">
+          <!-- <span class="font-bold text-white text-2xl">Clutch</span> -->
           <p class="mt-2">4.9 AVG. SCORE <br> BASED ON 80+ REVIEWS</p>
         </div>
         <div class="flex flex-col items-center text-center">
           <img
             src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/66d9d649ca478502f2b11fc1_award-color-upwork.svg"
             alt="">
+          <!-- <span class="font-bold text-white text-2xl">Upwork</span> -->
           <p class="mt-2">SINCE 2015 <br> 100% JOB SUCCESS</p>
         </div>
         <div class="flex flex-col items-center text-center">
           <img
             src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/66d9d649c65781f52fc3f9ff_award-color-sortlist.svg"
             alt="">
+          <!-- <span class="font-bold text-white text-2xl">Sortlist</span> -->
           <p class="mt-2">FEATURED WEB DESIGN <br> AGENCY IN UAE</p>
         </div>
         <div class="flex flex-col items-center text-center">
           <img
             src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/66e41801230bc5baa05c898b_award-color-dribbble.svg"
             alt="">
+          <!-- <span class="font-bold text-white text-2xl">Dribble</span> -->
           <p class="mt-2">SINCE 2013 <br> TOP DESIGN AGENCY</p>
         </div>
       </div>
@@ -720,7 +669,7 @@
 
   <footer class="bg-gray-900 text-white pt-16 pb-10">
     <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-8">
-                                <!-- Newsletter Section -->
+      <!-- Newsletter Section -->
       <div>
         <h3 class="text-2xl font-bold mb-2">Subscribe to our newsletter to stay in touch with the latest.</h3>
         <div class="flex items-center mt-10  bg-gray-800 pe-2 rounded-full border-gray-200 border">
@@ -756,7 +705,7 @@
         </div>
       </div>
 
-                                      <!-- Links Section -->
+      <!-- Links Section -->
       <div class=" md:items-center  flex flex-col">
         <ul class="space-y-2">
           <li><a href="#" class="hover:text-gray-400 text-xl font-bold">Discovery</a></li>
@@ -764,7 +713,6 @@
           <li><a href="#" class="hover:text-gray-400 text-xl font-bold">Development</a></li>
           <li><a href="#" class="hover:text-gray-400 text-xl font-bold">Marketing</a></li>
           <li><a href="#" class="hover:text-gray-400 text-xl font-bold">Projects</a></li>
-          
           <li><a href="#" class="hover:text-gray-400 text-xl font-bold">Dedicated Team</a></li>
           <li><a href="#" class="hover:text-gray-400 text-xl font-bold">Open Source</a></li>
           <li><a href="#" class="hover:text-gray-400 text-xl font-bold">Referral Program</a></li>
@@ -773,7 +721,7 @@
         </ul>
       </div>
 
-                                 <!-- Contact Section -->
+      <!-- Contact Section -->
       <div>
         <h3 class="text-xl font-bold mb-2">Drop Us a Line</h3>
         <p class="mb-4 font-semibold  text-gray-400">inquiry@halo-lab.com</p>
@@ -847,7 +795,8 @@
   <!--========================   Footer Section(end) ==================== -->
 
   <!--========================   JavaScript Portion    ==================== -->
-  <script>
+  <!-- Without Modification(NO LOOP) -->
+  <!-- <script>
     const slider = document.getElementById('slider');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
@@ -856,14 +805,34 @@
     prevBtn.onclick = () => slider.scrollBy({ left: -cardWidth, behavior: 'smooth' });
     nextBtn.onclick = () => slider.scrollBy({ left: cardWidth, behavior: 'smooth' });
 
-    // for header responsiveness 
-    const hamburgerIcon = document.getElementById("hamburger-icon");
-    const mobileMenu = document.getElementById("mobile-menu");
-  
-    hamburgerIcon.addEventListener("click", () => {
-      mobileMenu.classList.toggle("hidden");
-    });
+  </script> -->
 
-  </script>
+  <!-- With Modification(LOOP) -->
+   <script>
+    const slider = document.getElementById('slider');
+    const prevBtn = document.getElementById('prevBtn');
+    const nextBtn = document.getElementById('nextBtn');
+    const cardWidth = 350 + 24; 
+   
+    const totalScrollWidth = slider.scrollWidth - slider.clientWidth;
+    prevBtn.onclick = () => {
+      if (slider.scrollLeft <= 0) {
+       
+        slider.scrollTo({ left: totalScrollWidth, behavior: 'smooth' });
+      } else {
+        slider.scrollBy({ left: -cardWidth, behavior: 'smooth' });
+      }
+    };
+  
+    nextBtn.onclick = () => {
+      if (slider.scrollLeft + slider.clientWidth >= slider.scrollWidth) {
+        
+        slider.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        slider.scrollBy({ left: cardWidth, behavior: 'smooth' });
+      }
+    };
+  </script> 
+  
 </body>
 </html>
