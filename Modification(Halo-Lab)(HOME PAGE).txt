@@ -6,4 +6,10 @@ Modification(Halo-Lab)->(HOME PAGE):
 5.full screen e puro design ta hobe kono space chara jabe na.
 
 (MEGA MENU):
-1.Navbar e jottogula section ase oigula te page add korte hobe.                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+1.Navbar e jottogula section ase oigula te page add korte hobe.     
+
+6.4.25:
+-->loop wise slide showing(done)
+-->add another slide for testing purpose(done)
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
