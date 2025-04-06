@@ -12,7 +12,7 @@ Modification(Halo-Lab)->(HOME PAGE):
 6.4.25:
 -->loop wise slide showing(done)
 -->add another slide for testing purpose(done)
--->Full width for all section trying
+-->Full width for all section(trying)
 
 
 
