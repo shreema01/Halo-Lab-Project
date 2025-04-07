@@ -1,19 +1,8 @@
-Modification(Halo-Lab)->(HOME PAGE):
-1.jegula te background e image ase oigula te img set Korte hobe.
-2.hover er effect gula dite hobe.
-3.slider er loop wise implementation korte hobe(done).with adding more slide(done)
-4.je je jaigai slider ase oi jaiga gulo te slider use korte hobe full page er.
-5.full screen e puro design ta hobe kono space chara jabe na.
-6.header portion responsiveness
-
-(MEGA MENU):
-1.Navbar e jottogula section ase oigula te page add korte hobe.     
-
-6.4.25:
--->loop wise slide showing(done)
--->add another slide for testing purpose(done)
--->Full width for all section(trying)
-
-
-
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             
+for my reference:
+ ki korbo bujte parsi na,matha kaj e kortese na.mon taw valo na.kmn jani chup chap hoiaa gasi,hasio na,ki jani cholche akta kisuei bujchi na.kono kisuei jeno valo lagse na mone hocche.ki korbo ami vogoban?
+ kolkata i kaj:
+ 1.boromaa r mandir e jawa(21 tarik shokale)
+ 2.dhaksineswar and belur moth+addaya mandir e jawa(20 tarik bikale+sondha)
+ 3.Aguru,pitol er kola,hattol chara koraie kina 
+ 4.borobazar,salt-lake jawa(somoy hole)
+ 5.mallcik flower ghat
