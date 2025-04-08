@@ -813,7 +813,7 @@
 
   <!--========================   JavaScript Portion    ==================== -->
   <!-- With Modification(LOOP) -->
-   
+
   <script>
     const slider = document.getElementById('slider');
     const prevBtn = document.getElementById('prevBtn');
@@ -825,7 +825,8 @@
   
       if (slider.scrollLeft <= 0) {    
         slider.scrollTo({ left: totalScrollWidth, behavior: 'smooth' });
-      } else {
+      }
+      else {
         slider.scrollBy({ left: -cardWidth, behavior: 'smooth' });
       }
     };
