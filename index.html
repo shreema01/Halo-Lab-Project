@@ -824,7 +824,7 @@
       const totalScrollWidth = slider.scrollWidth - slider.clientWidth;
   
       if (slider.scrollLeft <= 0) {    
-        slider.scrollTo({ left: totalScrollWidth, behavior: 'smooth' });
+       slider.scrollTo({ left: totalScrollWidth, behavior: 'smooth' });
       }
       else {
         slider.scrollBy({ left: -cardWidth, behavior: 'smooth' });
