@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
   integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
   crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- library of swiper slider -->
+  <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+  />
   <!-- title of the page -->
   <title>Custom Design and Development Services — Halo Lab</title>
   <!--set the favicon link-->
@@ -17,17 +22,15 @@
   <!-- link the index.css file with the index.html file -->
   <link rel="stylesheet" href="index.css">
   <!-- Font-awesome cdn(js base) link -->
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
   <!-- link the tailwind css connection link -->
-  <script src="https://cdn.tailwindcss.com"></script>
+   <script src="https://cdn.tailwindcss.com"></script>
+ 
 </head>
-
 <body>
 
   <!--  ===================== Header Section(Start) =========================  -->
-
   <header class="header max-w-full">
-   
     <div>
       <img class="header_logo"
         src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/65142d5754eafa29699ca491_logo.svg"
@@ -59,11 +62,10 @@
       </a>
     </div>
   </header>
-
   <!-- ==========================   Header Section(End)    =============================  -->
+
   <!-- ==========================     Main Section(Start)  =============================  -->
   <!-- ==========================      Top Rank(Start)     =============================  -->
-
   <main>
     <section>
     <div class="bg-navy-900 flex py-5">
@@ -95,7 +97,6 @@
       </div>
     </div>
   </section>
-
     <!-- =========================    Video Playing(End)        ============================= -->
 
     <!-- ==========================  Trusted By Section(Start)  ============================= -->
@@ -117,8 +118,8 @@
         </div>
         <div class="flex-1 flex justify-center">
           <img
-            src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/67c18648d1201ba13fea32fe_logo-schibsted.svg"
-            alt="Schibsted" class="w-32">
+          src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/67c18648d1201ba13fea32fe_logo-schibsted.svg"
+          alt="Schibsted" class="w-32">
         </div>
         <div class="flex-1 flex justify-center">
           <img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/65c4cdd71a615f6f78fabaf4_logo-opera.svg"
@@ -128,7 +129,7 @@
           <img
             src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/67c18648d559059598d91f6b_logo-bonterra.svg"
             alt="Bonterra" class="w-44">
-        </div>
+        </div> 
         <div class="flex-1 flex justify-center">
           <img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/67c18648f7fac6ef7ff45ea9_logo-zoom.svg"
             alt="Zoom" class="w-28">
@@ -288,7 +289,7 @@
       </div>
     </section>
 
-    <section class="max-w-full mx-auto w-[100%] md:flex  gap-20 mb-20 relative">
+    <!-- <section class="max-w-full mx-auto w-[100%] md:flex  gap-20 mb-20 relative">
       <div>
         <div class="w-[40%]  relative bg-cover mt-20 bg-center w-[400px] h-[550px] flex justify-center items-center"
           style="background-image: url('https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/6596ea8404d31b14e01e406f_reviews-man.avif');">
@@ -363,7 +364,7 @@
               </div>
             </div>
           </div>
-          <!-- Fourth Section(Before) -->
+        
           <div
             class="w-[350px] h-[500px] flex-shrink-0 bg-blue-700 h-full text-white rounded-2xl p-6 shadow-lg relative">
             <div class="flex items-center mt-8 space-x-1 text-yellow-400 text-lg font-bold">
@@ -393,7 +394,7 @@
               </div>
             </div>
           </div>
-        <!-- Third Section -->
+        
           <div
           class="w-[350px] h-[500px] flex-shrink-0 bg-blue-700 h-full text-white rounded-2xl p-6 shadow-lg relative">
           <div class="flex items-center mt-1 space-x-1 text-yellow-400 text-lg font-bold">
@@ -422,7 +423,36 @@
         </div>
         </div>
       </div>
+    </section> -->
+    <br>
+    <section class="overflow-hidden relative z-10 py-16 px-8 md:px-12">
+      <div class="container mx-auto max-w-screen-xl">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-10">
+          <div class="flex-none w-76 relative">
+            <div class="absolute bottom-0 left-0">
+              <img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/6596ea8404d31b14e01e406f_reviews-man.avif" alt="Review" width="550" height="400" class="object-cover">
+            </div>
+            <div class="flex flex-col justify-start items-start max-w-xs pb-10">
+              <h2 class="text-7xl font-semibold text-white mt-10">4.9</h2>
+              <p class="text-xl mt-2 text-white">Clutch average based on 80+ reviews. All chances are you’ll be impressed too.</p>
+              <div class="flex gap-4 justify-center items-center mt-4">
+                <button class="w-14 h-14 text-3xl flex items-center justify-center rounded-full border border-white text-white hover:bg-white hover:text-black transition cursor-pointer z-50" id="prevButton">‹</button>
+                <button class="w-14 h-14 text-3xl flex items-center justify-center rounded-full border border-white text-white hover:bg-white hover:text-black transition cursor-pointer z-50" id="nextButton">›</button>
+              </div>
+            </div>
+          </div>
+  
+          <div class="flex-1">
+            <div class="swiper-container">
+              <div class="swiper-wrapper" id="testimonialSlider">
+                <!-- Testimonials will be injected here dynamically -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
+  
     <br>
 
     <!--======================== Review portions end ==================== -->
@@ -448,7 +478,6 @@
                 alt="">
             </div>
           </div>
-  
 
           <div class="relative">
             <div class="overflow-hidden">
@@ -814,8 +843,83 @@
 
   <!--========================   JavaScript Portion    ==================== -->
   <!-- With Modification(LOOP) -->
-
+   
+  <!-- swiper slider -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   <script>
+    // Testimonials Data
+    const testimonials = [
+      {
+        rating: 5.0,
+        text: "The client has learned to trust Halo Lab, thanks to their significant knowledge in UI/UX design. The vendor has provided valuable feedback by always being readily available for communication.",
+        author: "Abit Hussain",
+        position: "Co-Founder at Vlorish",
+        img: "https://via.placeholder.com/50"
+      },
+      {
+        rating: 5.0,
+        text: "The client has learned to trust Halo Lab, thanks to their significant knowledge in UI/UX design. The vendor has provided valuable feedback by always being readily available for communication.",
+        author: "Dmitri Lachevskyi",
+        position: "CEO, UNIQ Services",
+        img: "https://via.placeholder.com/50"
+      },
+      {
+        rating: 4.5,
+        text: "The client has learned to trust Halo Lab, thanks to their significant knowledge in UI/UX design. The vendor has provided valuable feedback by always being readily available for communication.",
+        author: "David Matthews",
+        position: "CEO, Dottel",
+        img: "https://via.placeholder.com/50"
+      },
+     
+    ];
+
+    // Populate the testimonial slides dynamically
+    const slider = document.getElementById('testimonialSlider');
+    testimonials.forEach((testimonial) => {
+      const slide = document.createElement('div');
+      slide.classList.add('swiper-slide');
+      slide.innerHTML = `
+        <div class="testimonial">
+          <img src="${testimonial.img}" alt="${testimonial.author}" width="50" height="50">
+          <div>
+            <h3>${testimonial.rating} 
+              <span class="rating">${'★'.repeat(Math.floor(testimonial.rating))}</span>
+            </h3>
+            <p>${testimonial.text}</p>
+            <div>
+              <p class="author">${testimonial.author}</p>
+              <p class="position">${testimonial.position}</p>
+            </div>
+          </div>
+        </div>
+      `;
+      slider.appendChild(slide);
+    });
+
+    // Initialize Swiper
+    const swiper = new Swiper('.swiper-container', {
+      slidesPerView: 1,
+      spaceBetween: 20,
+      loop: true,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        640: { slidesPerView: 1 },
+        768: { slidesPerView: 2 },
+        1024: { slidesPerView: 3 },
+      }
+    });
+
+    // Add functionality for the previous and next buttons
+    const prevButton = document.getElementById('prevButton');
+    const nextButton = document.getElementById('nextButton');
+    
+    prevButton.addEventListener('click', () => swiper.slidePrev());
+    nextButton.addEventListener('click', () => swiper.slideNext());
+  </script>
+  <!-- <script>
     const slider = document.getElementById('slider');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
@@ -841,6 +945,6 @@
         slider.scrollBy({ left: cardWidth, behavior: 'smooth' });
       }
     };
-  </script>
+  </script> -->
 </body>
 </html>
