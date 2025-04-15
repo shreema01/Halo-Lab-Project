@@ -408,7 +408,6 @@
             </div>
           </div>
 
-          <!-- new -->
           <div
           class="w-[350px] h-[500px] flex-shrink-0 bg-blue-700 h-full text-white rounded-2xl p-6 shadow-lg relative">
           <div class="flex items-center mt-8 space-x-1 text-yellow-400 text-lg font-bold">
@@ -516,6 +515,7 @@
               <img class="w-20 h-20 rounded-full"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNxWW_HqKGMZ_v7dbK9Z5J3U7I_SKP4W_25A&s"
                 alt="">
+             
             </div>
           </div>
 
@@ -561,16 +561,16 @@
                         alt="" class="h-3 ms-2"></p>
                   </div>
                
-                  <div class="flex-1 w-full">
+                  <!-- <div class="flex-1 w-full">
                     <div class="bg-black p-4 rounded-lg shadow-lg">
                       <img
                         src="https://colorlib.com/wp/wp-content/uploads/sites/2/html5-real-estate-website-templates.jpg"
                         alt="Project Screenshot" class="rounded-lg w-full">
                     </div>
-                  </div>
+                  </div> -->
                 </div>
                 <div
-                  class="mt-10 slide   flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6 flex-shrink-0 w-full">
+                  class="mt-10 slide flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6 flex-shrink-0 w-full">
                   
                   <div class="bg-gray-100 p-6 sm:p-8 rounded-lg flex-1">
                     <img
@@ -585,24 +585,55 @@
                         alt="" class="h-3 ms-2"></p>
                   </div>
                   
-                  <div class="flex-1 w-full">
-                    <div class="bg-black p-4 rounded-lg shadow-lg">
-                      <img
-                        src="https://colorlib.com/wp/wp-content/uploads/sites/2/html5-real-estate-website-templates.jpg"
-                        alt="Project Screenshot" class="rounded-lg w-full">
-                    </div>
-                  </div>
-                </div>
+                 
+                <!-- </div> -->
               </div>
             </div>
+
+            <!-- new -->
+            <div class="w-full max-w-2xl mx-auto overflow-hidden relative mt-10">
+              <!-- Slider wrapper -->
+              <div id="imageSlider" class="flex transition-transform duration-500 ease-in-out">
+                <img src="building 2.jpg" class="w-full flex-shrink-0" />
+                <img src="building.jpg" class="w-full flex-shrink-0" />
+                <img src="kitchen-8714865_1280.jpg" class="w-full flex-shrink-0" />
+
+              </div>
             
-            <div class="mt-6 flex gap-2 items-center">
-              <button id="prev"
-                class="border border-gray-400 w-10 h-10 px-3 rounded-full hover:bg-gray-200 text-gray-700 transition">←</button>
-              <button id="next"
-                class="border border-gray-400 w-10 h-10 px-3 rounded-full hover:bg-gray-200 text-gray-700 transition">→</button>
-              <div class="h-1 w-full ms-4 bg-blue-600 rounded-full"></div>
+              <!-- Navigation buttons -->
+              <div class="mt-6 flex gap-2 items-center justify-center">
+                <button id="prev"
+                  class="border border-gray-400 w-10 h-10 px-3 rounded-full hover:bg-gray-200 text-gray-700 transition">←</button>
+                <button id="next"
+                  class="border border-gray-400 w-10 h-10 px-3 rounded-full hover:bg-gray-200 text-gray-700 transition">→</button>
+                <div class="h-1 w-full ms-4 bg-blue-600 rounded-full"></div>
+              </div>
             </div>
+
+            <!-- new javascript -->
+            <script>
+              const imageSliderContainer = document.getElementById("imageSlider");
+              const imageSlides = imageSliderContainer.querySelectorAll("img");
+              let currentImageIndex = 0;
+            
+              function updateImageSlider() {
+                const singleSlideWidth = imageSlides[0].clientWidth;
+                imageSliderContainer.style.transform = `translateX(-${currentImageIndex * singleSlideWidth}px)`;
+              }
+            
+              document.getElementById("next").addEventListener("click", () => {
+                currentImageIndex = (currentImageIndex + 1) % imageSlides.length;
+                updateImageSlider();
+              });
+            
+              document.getElementById("prev").addEventListener("click", () => {
+                currentImageIndex = (currentImageIndex - 1 + imageSlides.length) % imageSlides.length;
+                updateImageSlider();
+              });
+            
+              window.addEventListener("resize", updateImageSlider);
+            </script>
+            
           </div>
         </div>
       </section>
