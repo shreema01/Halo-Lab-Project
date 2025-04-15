@@ -12,7 +12,163 @@ html {
 
 
 /* Header Section(Start) */
+/* Base Styles */
 .header_logo {
+  margin: 16px 0px;
+  max-width: 140px;
+}
+
+.section {
+  padding: 5rem 1.25rem;
+  position: relative;
+}
+
+.header {
+  border-top: 1.5px solid #fffc;
+  border-bottom: 1.5px solid #fffc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 20px 12px;
+  padding: 10px;
+}
+
+.navbar_menu {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  text-align: center;
+  width: auto;
+  color: white;
+  text-transform: uppercase;
+  margin: 10px 0;
+  font-weight: 300;
+}
+
+.navbar_menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: 500;
+  font-size: 15px;
+}
+
+.navbar_menu a:hover {
+  color: #007bff;
+}
+
+.Contact_Us a {
+  text-decoration: none;
+}
+
+.Contact_Us_Button {
+  height: 45px;
+  width: 175px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 200px;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 550;
+  font-size: 15px;
+  cursor: pointer;
+  background-color: white;
+  color: black;
+  transition: background-color 0.3s ease;
+}
+
+.navbar_menu_section {
+  display: flex;
+  text-transform: uppercase;
+}
+
+.services_icon {
+  margin: 8px;
+  margin-top: 3px;
+}
+
+/* Dropdown Menu Fix */
+#dropdownMenu button {
+  background: none;
+  color: white;
+  border: none;
+  width: 100%;
+}
+
+#dropdownMenu button:hover {
+  background-color: #2563eb;
+}
+
+/* Responsive Styles */
+
+@media (max-width: 1024px) {
+  .navbar_menu {
+    flex-direction: column;
+    align-items: flex-center;
+    width: 100%;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .Contact_Us {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  .Contact_Us_Button {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .navbar_menu_section a {
+    padding: 8px 0;
+    display: block;
+    width: 100%;
+    text-align: left;
+  }
+
+  #dropdown {
+    width: 100%;
+  }
+
+  #dropdownButton {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  #dropdownMenu {
+    width: 100%;
+  }
+}
+
+@media (max-width: 600px) {
+  .header_logo {
+    max-width: 120px;
+  }
+
+  .Contact_Us_Button {
+    font-size: 13px;
+    height: 40px;
+  }
+
+  .navbar_menu a {
+    font-size: 13px;
+  }
+
+  #dropdownButton span {
+    font-size: 14px;
+  }
+}
+
+/* .header_logo {
   margin: 16px 0px;
 }
 
@@ -26,7 +182,7 @@ html {
   border-bottom: 1.5px solid #fffc;
   display: flex;
   justify-content: space-between;
-  margin: 40px 60px;
+  margin: 20px 12px;
   padding:10px;
 }
 
@@ -50,7 +206,8 @@ html {
 }
 
 .navbar_menu a:hover {
-  border-bottom: 1px solid pink;
+  
+  color:#007bff;
 }
 
 .Contact_Us a {
@@ -80,7 +237,7 @@ html {
 .services_icon {
   margin:8px;
   margin-top:3px;
-}
+} */
 
 /* Header Section(End) */
 
