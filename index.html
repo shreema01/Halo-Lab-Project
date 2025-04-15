@@ -648,8 +648,153 @@
       <section class="max-w-full mx-auto py-16 px-6">
         <h2 class="text-7xl font-bold text-white">OUR <br> BENEFITS</h2>
         <div class="mt-10 flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-6">
+
+          <!-- new -->
+           <!-- Slideshow Container -->
+<div class="w-full max-w-3xl mx-auto overflow-hidden relative mt-2">
+  <div id="contentSlider" class="flex transition-transform duration-500 ease-in-out">
+
+    <!-- Slide 1 -->
+<div class="bg-white text-black rounded-2xl p-6 shadow-lg w-full lg:w-1/3 flex-shrink-0 me-6 last:me-0">
+  <div class="flex items-center space-x-3">
+    <div class="bg-yellow-400 text-black p-2 rounded-full">
+      <span class="text-xl">🔄</span>
+    </div>
+  </div>
+  <p class="mt-4 text-2xl font-semibold">
+    We offer a diverse range of products and services across various industries to meet your specific needs.
+  </p>
+</div>
+
+<!-- Slide 2 -->
+<div class="bg-white text-black rounded-2xl p-6 shadow-lg w-full lg:w-1/3 flex-shrink-0 me-6 last:me-0">
+  <div class="flex items-center space-x-3">
+    <div class="bg-yellow-400 text-black p-2 rounded-full">
+      <span class="text-xl">🚀</span>
+    </div>
+  </div>
+  <p class="mt-4 text-2xl font-semibold">
+    Our innovative solutions empower businesses to achieve goals with speed and precision.
+  </p>
+</div>
+
+<!-- Slide 3 -->
+<div class="bg-white text-black rounded-2xl p-6 shadow-lg w-full lg:w-1/3 flex-shrink-0 me-6 last:me-0">
+  <div class="flex items-center space-x-3">
+    <div class="bg-yellow-400 text-black p-2 rounded-full">
+      <span class="text-xl">📈</span>
+    </div>
+  </div>
+  <p class="mt-4 text-2xl font-semibold">
+    Grow your business with our expert consultation and data-driven strategies.
+  </p>
+</div>
+
+  </div>
+
+  <!-- Navigation Buttons -->
+  <div class="mt-6 flex gap-2 items-center justify-center">
+    
+    <button id="prevContent"
+      class="border border-gray-500 w-10 h-10 px-3 rounded-full hover:bg-blue-400 text-white-600 transition">←</button>
+    <button id="nextContent"
+      class="border border-gray-500 w-10 h-10 px-3 rounded-full hover:bg-blue-400 text-white-600 transition">→</button>
+  </div>
+
+  <!-- Indicator Bars -->
+  <!-- <div class="mt-6 flex justify-center space-x-2" id="contentIndicators">
+    <span class="content-bar h-1 w-10 bg-blue-600 rounded-full"></span>
+    <span class="content-bar h-1 w-10 bg-gray-300 rounded-full"></span>
+    <span class="content-bar h-1 w-10 bg-gray-300 rounded-full"></span>
+  </div> -->
+</div>
+
+
+
+<!-- <script>
+  const contentSlider = document.getElementById("contentSlider");
+  const contentSlides = contentSlider.children;
+  const contentBars = document.querySelectorAll(".content-bar");
+  let currentContentIndex = 0;
+
+  function updateContentSlider() {
+    const singleWidth = contentSlides[0].clientWidth;
+    contentSlider.style.transform = `translateX(-${currentContentIndex * singleWidth}px)`;
+
+   
+    contentBars.forEach((bar, index) => {
+      if (index === currentContentIndex) {
+        bar.classList.remove("bg-gray-300");
+        bar.classList.add("bg-blue-600");
+      } else {
+        bar.classList.remove("bg-blue-600");
+        bar.classList.add("bg-gray-300");
+      }
+    });
+  }
+
+  document.getElementById("nextContent").addEventListener("click", () => {
+    currentContentIndex = (currentContentIndex + 1) % contentSlides.length;
+    updateContentSlider();
+  });
+
+  document.getElementById("prevContent").addEventListener("click", () => {
+    currentContentIndex = (currentContentIndex - 1 + contentSlides.length) % contentSlides.length;
+    updateContentSlider();
+  });
+
+  window.addEventListener("resize", updateContentSlider);
+
+  
+  updateContentSlider();
+</script> -->
+<script>
+  const contentSlider = document.getElementById("contentSlider");
+  const contentSlides = contentSlider.children;
+  const contentBars = document.querySelectorAll(".content-bar");
+  let currentContentIndex = 0;
+
+  function updateContentSlider() {
+    const singleWidth = contentSlides[0].clientWidth;
+    contentSlider.style.transform = `translateX(-${currentContentIndex * singleWidth}px)`;
+
+    // Update indicator bar
+    contentBars.forEach((bar, index) => {
+      if (index === currentContentIndex) {
+        bar.classList.remove("bg-gray-300");
+        bar.classList.add("bg-blue-600");
+      } else {
+        bar.classList.remove("bg-blue-600");
+        bar.classList.add("bg-gray-300");
+      }
+    });
+  }
+
+  function goToNextSlide() {
+    currentContentIndex = (currentContentIndex + 1) % contentSlides.length;
+    updateContentSlider();
+  }
+
+  // Button control
+  document.getElementById("nextContent").addEventListener("click", goToNextSlide);
+
+  document.getElementById("prevContent").addEventListener("click", () => {
+    currentContentIndex = (currentContentIndex - 1 + contentSlides.length) % contentSlides.length;
+    updateContentSlider();
+  });
+
+  window.addEventListener("resize", updateContentSlider);
+
+  // Initial setup
+  updateContentSlider();
+
+  // Auto Slide Every 4 Seconds
+  setInterval(goToNextSlide, 4000);
+</script>
+
+
           
-          <div class="bg-white text-black rounded-2xl p-6 shadow-lg w-full lg:w-1/3">
+          <!-- <div class="bg-white text-black rounded-2xl p-6 shadow-lg w-full lg:w-1/3">
             <div class="flex items-center space-x-3">
               <div class="bg-yellow-400 text-black p-2 rounded-full">
                 <span class="text-xl">🔄</span>
@@ -664,7 +809,7 @@
               <span class="h-1 w-10 bg-gray-300 rounded-full"></span>
             </div>
           </div>
-          
+           -->
           <div class="flex flex-col lg:flex-row space-y-6 lg:space-y-0 lg:space-x-6 w-full lg:w-2/3">
             <div class="border border-white/50 p-6 rounded-2xl w-full lg:w-1/3">
               <h3 class="text-5xl font-bold">$530M</h3>
@@ -749,7 +894,7 @@
         <p class="text-gray-600 mt-6 text-lg">Let’s talk about how we can craft a user experience that not
           only looks great but drives real growth for your product.</p>
         <button
-          class="mt-10 bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-3 px-6 rounded-full flex items-center justify-center gap-2 mx-auto">
+          class="mt-10 bg-indigo-600 hover:bg-gray-700 text-white font-semibold py-3 px-6 rounded-full flex items-center justify-center gap-2 mx-auto">
           BOOK A CALL
           <span class="material-icons">📅</span>
         </button>
@@ -840,9 +985,9 @@
       </div>
 
       <div>
-        <h3 class="text-xl font-bold mb-2">Drop Us a Line</h3>
-        <p class="mb-4 font-semibold  text-gray-400">inquiry@halo-lab.com</p>
-        <h3 class="text-xl font-bold mb-2">Call Us</h3>
+        <h3 class="text-xl font-bold mb-2 hover:text-gray-400">Drop Us a Line</h3>
+        <p class="mb-4 font-semibold  text-blue-400">inquiry@halo-lab.com</p>
+        <h3 class="text-xl font-bold mb-2 hover:text-gray-400">Call Us</h3>
         <p class="flex items-center space-x-2 text-green-400">
           <i class="fab fa-whatsapp"></i>
           <span>+1 (213) 337-8573</span>
