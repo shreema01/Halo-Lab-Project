@@ -743,3 +743,6 @@ body {
   font-size: 12px;
   color: #ccc;
 }
+.hover_founder{
+  transform-style: preserve-3d ;
+}
