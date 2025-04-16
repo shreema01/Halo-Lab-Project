@@ -26,6 +26,24 @@
 
   <!-- link the tailwind css connection link -->
    <script src="https://cdn.tailwindcss.com"></script>
+
+   <!-- <style>
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  
+    .animate-fadeIn {
+      animation: fadeIn 0.3s ease-in-out;
+    }
+  </style> -->
+  
 </head>
 <body>
   <!--  ===================== Header Section(Start) =========================  -->
@@ -37,7 +55,111 @@
     </div>
    
     <nav class="navbar_menu">
-      <div class="relative inline-block" id="dropdown">
+
+<!-- Font Awesome CDN -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet">
+
+<!-- SERVICES Mega Menu -->
+<div class="relative z-50 group">
+  <!-- Dropdown Button -->
+  <button class="flex items-center gap-1 text-white hover:text-blue-400 bg-[#02021e] border-0 rounded-md px-4 py-2">
+    <span>SERVICES</span>
+    <i class="fa-solid fa-angle-down text-xs mt-1"></i>
+  </button>
+
+  <!-- Full-screen Mega Dropdown -->
+  <div
+    class="fixed inset-0 hidden group-hover:flex items-start justify-center bg-black bg-opacity-50 z-40"
+  >
+    <div class="bg-white mt-[70px] rounded-3xl w-full max-w-[1440px] mx-auto p-8 animate-fadeIn">
+      <!-- Grid Layout -->
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+        <!-- Banner -->
+        <div class="bg-[#3a22e0] text-white rounded-3xl p-6 flex flex-col justify-between shadow-lg">
+          <div>
+            <img
+              src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/672b841f81d9a64d3e177996_menu-banner.avif"
+              alt="UX/UI Audit"
+              class="rounded-lg mb-6"
+            />
+            <p class="text-lg font-medium leading-snug">
+              Unlock up to +30% higher engagement in 6 months with our detailed UX/UI Audit
+            </p>
+          </div>
+          <button class="mt-6 bg-white text-[#3a22e0] font-semibold py-2 px-4 rounded-full flex items-center justify-center gap-2 hover:bg-gray-100 transition">
+            GET UX/UI AUDIT <i class="fas fa-bolt"></i>
+          </button>
+        </div>
+
+        <!-- Design Column -->
+        <div class="bg-gray-200 rounded-3xl p-6 hover:bg-gray-300 transition">
+          <div class="flex justify-between items-center mb-4">
+            <div class="w-10 h-10 rounded-full bg-[#3a22e0] flex items-center justify-center text-white">
+              <i class="fas fa-pencil-ruler"></i>
+            </div>
+            <div class="w-8 h-8 rounded-full border flex items-center justify-center text-black">
+              <i class="fas fa-arrow-up-right-from-square text-xs"></i>
+            </div>
+          </div>
+          <h2 class="text-xl font-bold mb-2  text-black">Design</h2>
+          <hr class="border-gray-400 mb-4" />
+          <ul class="space-y-2 text-sm font-medium text-black">
+            <li>UI/UX design</li>
+            <li>Web design</li>
+            <li>Mobile app design</li>
+            <li>Landing page design</li>
+            <li>Branding</li>
+          </ul>
+        </div>
+
+        <!-- Development Column -->
+        <div class="bg-gray-100 rounded-3xl p-6 hover:bg-gray-200 transition">
+          <div class="flex justify-between items-center mb-4">
+            <div class="w-10 h-10 rounded-full bg-[#3a22e0] flex items-center justify-center text-white">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="w-8 h-8 rounded-full border flex items-center justify-center text-black">
+              <i class="fas fa-arrow-up-right-from-square text-xs"></i>
+            </div>
+          </div>
+          <h2 class="text-xl font-bold mb-2  text-black">Development</h2>
+          <hr class="border-gray-400 mb-4" />
+          <ul class="space-y-2 text-sm font-medium text-black">
+            <li>Web development</li>
+            <li>Software development</li>
+            <li>CMS development</li>
+            <li>Webflow development</li>
+            <li>MVP development</li>
+          </ul>
+        </div>
+
+        <!-- Marketing Column -->
+        <div class="bg-gray-100 rounded-3xl p-6 hover:bg-gray-200 transition">
+          <div class="flex justify-between items-center mb-4">
+            <div class="w-10 h-10 rounded-full bg-[#3a22e0] flex items-center justify-center text-white">
+              <i class="fas fa-bullhorn"></i>
+            </div>
+            <div class="w-8 h-8 rounded-full border flex items-center justify-center text-black">
+              <i class="fas fa-arrow-up-right-from-square text-xs"></i>
+            </div>
+          </div>
+          <h2 class="text-xl font-bold mb-2 text-black">Marketing</h2>
+          <hr class="border-gray-400 mb-4" />
+          <ul class="space-y-2 text-sm font-medium text-black">
+            <li>Product Hunt support</li>
+            <li>Content marketing</li>
+            <li>Pitch deck design</li>
+            <li>SEO</li>
+            <li>CRO</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+      <!-- <div class="relative inline-block" id="dropdown">
         <button id="dropdownButton" class="flex items-center gap-1 text-white hover:text-blue-400 bg-#02021e border-0 rounded-md">
           <span id="selectedOption">SERVICES</span>
           <i class="fa-solid fa-angle-down text-xs mt-1"></i>
@@ -48,7 +170,7 @@
           <button class="block w-full text-left px-4 py-2 hover:bg-blue-500" data-value="UI/UX Design">UI/UX Design</button>
           <button class="block w-full text-left px-4 py-2 hover:bg-blue-500" data-value="SEO Optimization">SEO Optimization</button>
         </div>
-      </div>
+      </div> -->
       <br>
       
       <div class="navbar_menu_section ">
