@@ -892,7 +892,7 @@
         </div>
       </div>
 
-      <div class=" md:items-center  flex flex-col">
+      <div class="md:items-center  flex flex-col">
         <ul class="space-y-2">
           <li><a href="#" class="hover:text-gray-400 text-xl font-bold">Discovery</a></li>
           <li><a href="#" class="hover:text-gray-400 text-xl font-bold">Design</a></li>
@@ -952,18 +952,111 @@
       </div>
 
       <div class="space-y-4">
-        <div class="flex justify-between items-center  border-t border-white py-2">
+        <div class="flex flex-col border-t border-white py-2 relative">
+          <div class="flex justify-between items-center">
+            <span class="text-2xl">Show all services category</span>
+        
+            <!-- + Button -->
+            <button onclick="toggleServices()" class="text-2xl hover:bg-blue-400 hover:rounded-full px-3 py-1 relative z-10">
+              +
+            </button>
+          </div>
+        
+          <!-- Hidden Options Section -->
+          <div id="servicesMenu" class="mt-2 bg-gray-700 text-white rounded shadow-md p-4 absolute right-0 top-full hidden z-20 w-64">
+            <ul class="space-y-2">
+              <li class="hover:text-blue-600 cursor-pointer">Web Development</li>
+              <li class="hover:text-blue-600 cursor-pointer">App Development</li>
+              <li class="hover:text-blue-600 cursor-pointer">UI/UX Design</li>
+              <li class="hover:text-blue-600 cursor-pointer">SEO Services</li>
+              <li class="hover:text-blue-600 cursor-pointer">Cloud Deployment</li>
+            </ul>
+          </div>
+        </div>
+        
+        <!-- JavaScript to toggle the services menu -->
+        <script>
+          function toggleServices() {
+            const menu = document.getElementById("servicesMenu");
+            menu.classList.toggle("hidden");
+          }
+        </script>
+        
+        <!-- <div class="flex justify-between items-center  border-t border-white py-2">
           <span class="text-2xl">Show all services</span>
           <span class="text-2xl hover:bg-blue-400 hover:rounded-full">+</span>
+        </div> -->
+        <div class="flex flex-col border-t border-white py-2 relative">
+          <div class="flex justify-between items-center">
+            <span class="text-2xl">Show all technologies</span>
+            
+            <!-- + Button -->
+            <button onclick="toggleOptions()" class="text-2xl hover:bg-blue-400 hover:rounded-full px-3 py-1 relative z-10">
+              +
+            </button>
+          </div>
+        
+          <!-- Hidden Options Section -->
+          <div id="optionsMenu" class="mt-2 bg-gray-700 text-black rounded shadow-md p-4 absolute right-0 top-full hidden z-20 w-64 text-white">
+            <ul class="space-y-2">
+              <li class="hover:text-blue-600 cursor-pointer">HTML</li>
+              <li class="hover:text-blue-600 cursor-pointer">CSS</li>
+              <li class="hover:text-blue-600 cursor-pointer">JavaScript</li>
+              <li class="hover:text-blue-600 cursor-pointer">React</li>
+              <li class="hover:text-blue-600 cursor-pointer">Tailwind CSS</li>
+              
+            </ul>
+          </div>
         </div>
-        <div class="flex justify-between items-center border-t border-white py-2">
+        
+        <!-- JavaScript to toggle options -->
+        <script>
+          function toggleOptions() {
+            const menu = document.getElementById("optionsMenu");
+            menu.classList.toggle("hidden");
+          }
+        </script>
+        
+        <!-- <div class="flex justify-between items-center border-t border-white py-2">
           <span class="text-2xl">Show all technologies</span>
           <span class="text-2xl hover:bg-blue-400 hover:rounded-full">+</span>
-        </div>
-        <div class="flex justify-between items-center  border-t border-white py-2">
+        </div> -->
+        <!-- <div class="flex justify-between items-center  border-t border-white py-2">
           <span class="text-2xl">Show all industries</span>
           <span class="text-2xl hover:bg-blue-400 hover:rounded-full">+</span>
+        </div> -->
+        <div class="flex flex-col border-t border-white py-2 relative">
+          <div class="flex justify-between items-center">
+            <span class="text-2xl">Show all industries</span>
+        
+            <!-- + Button -->
+            <button onclick="toggleIndustries()" class="text-2xl hover:bg-blue-400 hover:rounded-full px-3 py-1 relative z-10">
+              +
+            </button>
+          </div>
+        
+          <!-- Hidden Options Section -->
+          <div id="industriesMenu" class="mt-2 bg-gray-700 text-white rounded shadow-md p-4 absolute right-0 top-full hidden z-20 w-64">
+            <ul class="space-y-2">
+              <li class="hover:text-blue-600 cursor-pointer">Healthcare</li>
+              <li class="hover:text-blue-600 cursor-pointer">Finance</li>
+              <li class="hover:text-blue-600 cursor-pointer">Education</li>
+              <li class="hover:text-blue-600 cursor-pointer">E-commerce</li>
+              <li class="hover:text-blue-600 cursor-pointer">Travel & Tourism</li>
+              <li class="hover:text-blue-600 cursor-pointer">Real Estate</li>
+              <!-- প্রয়োজনমতো এখানে আরও industries যোগ করতে পারো -->
+            </ul>
+          </div>
         </div>
+        
+        <!-- JavaScript to toggle the industries menu -->
+        <script>
+          function toggleIndustries() {
+            const menu = document.getElementById("industriesMenu");
+            menu.classList.toggle("hidden");
+          }
+        </script>
+        
       </div>
 
       <div class="text-center flex justify-between text-lg text-gray-400 mt-10">
