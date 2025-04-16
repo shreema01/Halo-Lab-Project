@@ -470,34 +470,6 @@
       </div>
     </section>
     <br>
-    <!-- <section class="overflow-hidden relative z-10 py-16 px-8 md:px-12">
-      <div class="container mx-auto max-w-screen-xl">
-        <div class="flex flex-col md:flex-row justify-between items-center gap-6 mb-10">
-          <div class="flex-none w-76 relative">
-            <div class="absolute bottom-0 left-0">
-              <img src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/6596ea8404d31b14e01e406f_reviews-man.avif" alt="Review" width="550" height="400" class="object-cover">
-            </div>
-            <div class="flex flex-col justify-start items-start max-w-xs pb-10">
-              <h2 class="text-7xl font-semibold text-white mt-10">4.9</h2>
-              <p class="text-xl mt-2 text-white">Clutch average based on 80+ reviews. All chances are you’ll be impressed too.</p>
-              <div class="flex gap-4 justify-center items-center mt-4">
-                <button class="w-14 h-14 text-3xl flex items-center justify-center rounded-full border border-white text-white hover:bg-white hover:text-black transition cursor-pointer z-50" id="prevButton">‹</button>
-                <button class="w-14 h-14 text-3xl flex items-center justify-center rounded-full border border-white text-white hover:bg-white hover:text-black transition cursor-pointer z-50" id="nextButton">›</button>
-              </div>
-            </div>
-          </div>
-  
-          <div class="flex-1">
-            <div class="swiper-container">
-              <div class="swiper-wrapper" id="testimonialSlider">
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-  
-    <br> -->
 
     <!--======================== Review portions end ==================== -->
 
@@ -520,7 +492,6 @@
               <img class="w-20 h-20 rounded-full"
                 src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRNxWW_HqKGMZ_v7dbK9Z5J3U7I_SKP4W_25A&s"
                 alt="">
-             
             </div>
           </div>
 
@@ -565,14 +536,6 @@
                         src="https://static.vecteezy.com/system/resources/thumbnails/002/399/741/small/american-flag-icon-vector.jpg"
                         alt="" class="h-3 ms-2"></p>
                   </div>
-               
-                  <!-- <div class="flex-1 w-full">
-                    <div class="bg-black p-4 rounded-lg shadow-lg">
-                      <img
-                        src="https://colorlib.com/wp/wp-content/uploads/sites/2/html5-real-estate-website-templates.jpg"
-                        alt="Project Screenshot" class="rounded-lg w-full">
-                    </div>
-                  </div> -->
                 </div>
                 <div
                   class="mt-10 slide flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-6 flex-shrink-0 w-full">
@@ -589,20 +552,15 @@
                         src="https://static.vecteezy.com/system/resources/thumbnails/002/399/741/small/american-flag-icon-vector.jpg"
                         alt="" class="h-3 ms-2"></p>
                   </div>
-                  
-                 
-                <!-- </div> -->
               </div>
             </div>
 
-            <!-- new -->
             <div class="w-full max-w-2xl mx-auto overflow-hidden relative mt-10">
               <!-- Slider wrapper -->
               <div id="imageSlider" class="flex transition-transform duration-500 ease-in-out">
                 <img src="building 2.jpg" class="w-full flex-shrink-0" />
                 <img src="building.jpg" class="w-full flex-shrink-0" />
                 <img src="kitchen-8714865_1280.jpg" class="w-full flex-shrink-0" />
-
               </div>
             
               <!-- Navigation buttons -->
@@ -615,29 +573,7 @@
               </div>
             </div>
 
-            <!-- new javascript -->
-            <script>
-              const imageSliderContainer = document.getElementById("imageSlider");
-              const imageSlides = imageSliderContainer.querySelectorAll("img");
-              let currentImageIndex = 0;
-            
-              function updateImageSlider() {
-                const singleSlideWidth = imageSlides[0].clientWidth;
-                imageSliderContainer.style.transform = `translateX(-${currentImageIndex * singleSlideWidth}px)`;
-              }
-            
-              document.getElementById("next").addEventListener("click", () => {
-                currentImageIndex = (currentImageIndex + 1) % imageSlides.length;
-                updateImageSlider();
-              });
-            
-              document.getElementById("prev").addEventListener("click", () => {
-                currentImageIndex = (currentImageIndex - 1 + imageSlides.length) % imageSlides.length;
-                updateImageSlider();
-              });
-            
-              window.addEventListener("resize", updateImageSlider);
-            </script>
+           
             
           </div>
         </div>
@@ -1072,7 +1008,8 @@
       }
     };
   </script>
-  <!-- dropdown menu -->
+
+  <!-- For Dropdown menu of the navbar -->
   <script>
     const dropdownButton = document.getElementById('dropdownButton');
     const dropdownMenu = document.getElementById('dropdownMenu');
@@ -1098,6 +1035,29 @@
       }
     });
   </script>
-  
+
+  <!-- 2 nd slider of the home page  -->
+            <script>
+              const imageSliderContainer = document.getElementById("imageSlider");
+              const imageSlides = imageSliderContainer.querySelectorAll("img");
+              let currentImageIndex = 0;
+            
+              function updateImageSlider() {
+                const singleSlideWidth = imageSlides[0].clientWidth;
+                imageSliderContainer.style.transform = `translateX(-${currentImageIndex * singleSlideWidth}px)`;
+              }
+            
+              document.getElementById("next").addEventListener("click", () => {
+                currentImageIndex = (currentImageIndex + 1) % imageSlides.length;
+                updateImageSlider();
+              });
+            
+              document.getElementById("prev").addEventListener("click", () => {
+                currentImageIndex = (currentImageIndex - 1 + imageSlides.length) % imageSlides.length;
+                updateImageSlider();
+              });
+            
+              window.addEventListener("resize", updateImageSlider);
+            </script>
 </body>
 </html>
