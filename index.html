@@ -26,7 +26,6 @@
 
   <!-- link the tailwind css connection link -->
    <script src="https://cdn.tailwindcss.com"></script>
-
 </head>
 <body>
   <!--  ===================== Header Section(Start) =========================  -->
@@ -36,7 +35,7 @@
         src="https://cdn.prod.website-files.com/63f38a8c92397a024fcb9ae8/65142d5754eafa29699ca491_logo.svg"
         alt="Halo Lab Logo">
     </div>
-   
+   <!-- nav-bar portion -->
     <nav class="navbar_menu">
       
 <div class="relative z-50 group">
@@ -133,7 +132,7 @@
   </div>
 </div>
       <br>
-      
+
       <div class="navbar_menu_section ">
         <a href="#">projects</a>
       </div>
@@ -364,7 +363,6 @@
       </div>
     </div>
   </section>
-
     <!--========================  Our Services Portion(End) ==================== -->
 
     <!--========================     Review portion (Start)   ==================== -->
@@ -552,7 +550,6 @@
       </div>
     </section>
     <br>
-
     <!--======================== Review portions end ==================== -->
 
     <!--======================== our works start ==================== -->
@@ -654,15 +651,11 @@
                 <div class="h-1 w-full ms-4 bg-blue-600 rounded-full"></div>
               </div>
             </div>
-
-           
-            
           </div>
         </div>
       </section>
     </div>
     </section>
-
     <!--======================== our works end ==================== -->
 
     <!--======================== our benefits start ==================== -->
@@ -672,7 +665,6 @@
         <h2 class="text-7xl font-bold text-white">OUR <br> BENEFITS</h2>
         <div class="mt-10 flex flex-col lg:flex-row items-center lg:items-start space-y-6 lg:space-y-0 lg:space-x-6">
 
-          <!-- new -->
            <!-- Slideshow Container -->
 <div class="w-full max-w-3xl mx-auto overflow-hidden relative mt-2">
   <div id="contentSlider" class="flex transition-transform duration-500 ease-in-out">
@@ -723,54 +715,8 @@
     <button id="nextContent"
       class="border border-gray-500 w-10 h-10 px-3 rounded-full hover:bg-blue-400 text-white-600 transition">→</button>
   </div>
-
-  <!-- Indicator Bars -->
-  <!-- <div class="mt-6 flex justify-center space-x-2" id="contentIndicators">
-    <span class="content-bar h-1 w-10 bg-blue-600 rounded-full"></span>
-    <span class="content-bar h-1 w-10 bg-gray-300 rounded-full"></span>
-    <span class="content-bar h-1 w-10 bg-gray-300 rounded-full"></span>
-  </div> -->
 </div>
 
-
-
-<!-- <script>
-  const contentSlider = document.getElementById("contentSlider");
-  const contentSlides = contentSlider.children;
-  const contentBars = document.querySelectorAll(".content-bar");
-  let currentContentIndex = 0;
-
-  function updateContentSlider() {
-    const singleWidth = contentSlides[0].clientWidth;
-    contentSlider.style.transform = `translateX(-${currentContentIndex * singleWidth}px)`;
-
-   
-    contentBars.forEach((bar, index) => {
-      if (index === currentContentIndex) {
-        bar.classList.remove("bg-gray-300");
-        bar.classList.add("bg-blue-600");
-      } else {
-        bar.classList.remove("bg-blue-600");
-        bar.classList.add("bg-gray-300");
-      }
-    });
-  }
-
-  document.getElementById("nextContent").addEventListener("click", () => {
-    currentContentIndex = (currentContentIndex + 1) % contentSlides.length;
-    updateContentSlider();
-  });
-
-  document.getElementById("prevContent").addEventListener("click", () => {
-    currentContentIndex = (currentContentIndex - 1 + contentSlides.length) % contentSlides.length;
-    updateContentSlider();
-  });
-
-  window.addEventListener("resize", updateContentSlider);
-
-  
-  updateContentSlider();
-</script> -->
 <script>
   const contentSlider = document.getElementById("contentSlider");
   const contentSlides = contentSlider.children;
@@ -844,11 +790,9 @@
     </div>
   </section>
   <br>
-
     <!--======================== our benefits end ==================== -->
 
     <!--======================== Hot Article start ==================== -->
-
     <section class="my-10 md:my-28">
       <div class="max-w-full flex flex-col md:flex-row gap-10 md:gap-40 mx-auto px-4">
         <div class="flex justify-center md:justify-start">
@@ -932,7 +876,6 @@
       </div>
     </div>
     </section>
-
     <!-- ========================  Booking end  ==================== -->
   </main>
   <!-- ========================  Footer Section(Start) ==================== -->
@@ -1124,7 +1067,6 @@
             menu.classList.toggle("hidden");
           }
         </script>
-        
       </div>
 
       <div class="text-center flex justify-between text-lg text-gray-400 mt-10">
@@ -1196,7 +1138,6 @@
   </script>
 
   <!-- 2 nd slider of the home page  -->
-          
           <script>
               const imageSliderContainer = document.getElementById("imageSlider");
               const imageSlides = imageSliderContainer.querySelectorAll("img");
@@ -1219,6 +1160,5 @@
             
               window.addEventListener("resize", updateImageSlider);
           </script>
-
 </body>
 </html>
